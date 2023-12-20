@@ -121,7 +121,7 @@
   position: fixed;
   background-color: red;
   bottom: -50px;
-  right: 60px;
+  right: 50px;
   border-radius: 5px;
   a {
     padding: 10px;
@@ -298,9 +298,6 @@
             text-align: center;
             border-radius: 8px;
             background: var(--Other-white, #fff);
-            &:hover {
-              box-shadow: 10px 10px 10px rgb(62, 59, 59);
-            }
             img {
               width: 100%;
             }
@@ -497,8 +494,16 @@
       &-grid {
         padding: 16px 16px;
         margin-bottom: 24px;
+
         &__description {
           margin-bottom: 24px;
+          padding: 16px 16px;
+          transition: 0.3s;
+          &:hover {
+            border-radius: 8px;
+            background: var(--Other-white, #fff);
+            box-shadow: 4px 4px 4px rgb(234, 227, 227);
+          }
           &__prise {
             display: flex;
             align-items: center;
@@ -801,6 +806,21 @@
 }
 
 @media (max-width: 500px) {
+  .carousel {
+    .container {
+      .carousel-grid {
+        .carousel-grid-right {
+          .carousel-grid-right__h2 {
+            margin-right: 100px;
+            margin-left: 120px;
+          }
+          .carousel-grid-right__h1 {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
   .mentor {
     .container {
       .mentor-flex {
@@ -810,6 +830,12 @@
           }
         }
         &__right {
+          &__p1 {
+            text-align: center;
+          }
+          &__p2 {
+            text-align: center;
+          }
           &__title {
             text-align: center;
           }
@@ -818,3 +844,53 @@
     }
   }
 }
+
+// carousel
+.carousel {
+  margin-top: 224px;
+  margin-bottom: 224px;
+  .container {
+    .carousel-grid {
+      display: flex;
+      gap: 48px;
+      flex-wrap: wrap;
+      &-left {
+        &__img {
+          position: relative;
+          bottom: -30px;
+          right: 350px;
+        }
+      }
+      &-right {
+        &__h1 {
+          color: var(--Text-Tittle, #1c3554);
+          font-family: Rubik;
+          font-size: 32px;
+          font-weight: 400;
+          line-height: 48px;
+          max-width: 672px;
+        }
+        &__h2 {
+          color: var(--Text-Tittle, #1c3554);
+          font-family: Rubik;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 32px;
+          max-width: 222px;
+        }
+        &__h3 {
+          color: var(--Text-Body, #808080);
+          font-family: Montserrat;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px;
+          max-width: 336px;
+        }
+      }
+    }
+  }
+}
+
+// carousel

@@ -26,3 +26,7 @@ function toggleBacktop() {
     backtop.classList.remove("backtop-show");
   }
 }
+
+$(document).ready(function () {
+  $(".owl-carousel").owlCarousel();
+});
