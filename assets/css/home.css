@@ -759,12 +759,3 @@ button {
 .mentor .container .mentor-flex__right__p2 {
   margin-bottom: 40px;
 }
-
-@media (max-width: 500px) {
-  .mentor .container .mentor-flex__left__btn {
-    margin-left: 200px;
-  }
-  .mentor .container .mentor-flex__right__title {
-    text-align: center;
-  }
-}

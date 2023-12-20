@@ -799,22 +799,3 @@
     }
   }
 }
-
-@media (max-width: 500px) {
-  .mentor {
-    .container {
-      .mentor-flex {
-        &__left {
-          &__btn {
-            margin-left: 200px;
-          }
-        }
-        &__right {
-          &__title {
-            text-align: center;
-          }
-        }
-      }
-    }
-  }
-}
