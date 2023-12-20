@@ -669,3 +669,39 @@ button {
     grid-template-columns: 1fr;
   }
 }
+.about {
+  margin-top: 200px;
+}
+.about .container .about-card {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 260px;
+  text-align: center;
+}
+.about .container .about-card__content__description1 {
+  color: var(--Text-Tittle, #1c3554);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Rubik;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  text-transform: capitalize;
+}
+.about .container .about-card__content__description2 {
+  color: var(--Text-Tittle, #1c3554);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Rubik;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+@media (max-width: 600px) {
+  .about .container .about-card {
+    margin-left: 100px;
+  }
+}
