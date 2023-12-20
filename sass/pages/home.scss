@@ -121,7 +121,7 @@
   position: fixed;
   background-color: red;
   bottom: -50px;
-  right: 50px;
+  right: 65px;
   border-radius: 5px;
   a {
     padding: 10px;
@@ -794,6 +794,25 @@
         &__p2 {
           @extend .similar;
           margin-bottom: 40px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .mentor {
+    .container {
+      .mentor-flex {
+        &__left {
+          &__btn {
+            margin-left: 200px;
+          }
+        }
+        &__right {
+          &__title {
+            text-align: center;
+          }
         }
       }
     }

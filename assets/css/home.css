@@ -155,7 +155,7 @@ button {
   position: fixed;
   background-color: red;
   bottom: -50px;
-  right: 50px;
+  right: 65px;
   border-radius: 5px;
 }
 #backtop a {
@@ -758,4 +758,13 @@ button {
 }
 .mentor .container .mentor-flex__right__p2 {
   margin-bottom: 40px;
+}
+
+@media (max-width: 500px) {
+  .mentor .container .mentor-flex__left__btn {
+    margin-left: 200px;
+  }
+  .mentor .container .mentor-flex__right__title {
+    text-align: center;
+  }
 }
