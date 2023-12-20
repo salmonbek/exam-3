@@ -703,5 +703,6 @@ button {
 @media (max-width: 600px) {
   .about .container .about-card {
     margin-left: 100px;
+    margin-right: 100px;
   }
 }
