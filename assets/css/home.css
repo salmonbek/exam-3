@@ -1103,12 +1103,14 @@ button {
   }
   .blog .container .blog-card .blog-card__content-flex {
     margin-left: 90px;
+    margin-right: 90px;
   }
   .blog .container .blog-title {
     text-align: center;
   }
   .mentor .container .mentor-flex .mentor-flex__right__btn {
     margin-left: 60px;
+    margin-right: 60px;
   }
   .courses .container .courses-btns {
     margin-left: 60px;
@@ -1130,6 +1132,7 @@ button {
   }
   .courses .container .courses-link {
     margin-left: 50px;
+    margin-right: 50px;
   }
   .footer .container .footer-section .footer-section__left .footer-section__left__p {
     text-align: center;
