@@ -1132,6 +1132,17 @@
 }
 
 @media (max-width: 500px) {
+  .hero {
+    .container {
+      .hero-section-left {
+        .hero-section-left-advise {
+          .hero-section-left-advise__s {
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
   .company {
     .container {
       .company-title {
@@ -1143,6 +1154,11 @@
     .container {
       .blog-card {
         text-align: center;
+        .blog-card__content {
+          &-flex {
+            margin-left: 90px;
+          }
+        }
       }
       .blog-title {
         text-align: center;

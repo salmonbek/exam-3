@@ -1092,11 +1092,17 @@ button {
 }
 
 @media (max-width: 500px) {
+  .hero .container .hero-section-left .hero-section-left-advise .hero-section-left-advise__s {
+    margin: 0 auto;
+  }
   .company .container .company-title {
     text-align: center;
   }
   .blog .container .blog-card {
     text-align: center;
+  }
+  .blog .container .blog-card .blog-card__content-flex {
+    margin-left: 90px;
   }
   .blog .container .blog-title {
     text-align: center;
