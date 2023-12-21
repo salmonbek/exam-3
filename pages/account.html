@@ -4,20 +4,413 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>account</title>
     <link rel="stylesheet" href="../assets/css/account.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container">
-        <p class="h">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla sed quisquam nesciunt architecto
-            consequuntur
-            officia odit numquam officiis excepturi dolores repellat necessitatibus distinctio labore, blanditiis ab
-            animi
-            repellendus? Modi, necessitatibus.
-        </p>
+    <div id="backtop">
+
+        <a href="#">
+            <img src="../assets/images/top.svg" alt="">
+        </a>
     </div>
+    <!-- header -->
+    <header class="header">
+        <div class="container">
+            <div class="navigation">
+                <a href="">
+                    <img src="../assets/images/home-img/Log-whiteo.svg" alt="">
+                </a>
+                <div class="navigation-left">
+                    <input class="navigation-left__input" placeholder="Search bar" type="text"></a>
+                </div>
+                <div class="navigation-right">
+                    <div class="navigation-right-one">
+                        <div class="navigation-right-one-link__one">
+                            <a class="navigation-right-one-link__one__a" href="#"><b>Categories</b></a>
+                            <a href="">
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-menu-item"><a href="../pages/courses.html"
+                                            class="dropdown-menu-link">Courses</a>
+                                    </li>
+                                    <li class="dropdown-menu-item"><a href="../pages/details.html"
+                                            class="dropdown-menu-link">Detail
+                                            Courses</a></li>
+                                    <li class="dropdown-menu-item"><a href="../pages/blog.html"
+                                            class="dropdown-menu-link">Blog</a></li>
+                                    <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Account</a>
+                                    </li>
+                                </ul>
+                                <img src="../assets/images/home-img/arrow_drop_down.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="navigation-right-one-link__second">
+                            <a class="navigation-right-one-link__second__a" href=""><b>Become an Mentor</b></a>
+                        </div>
+                    </div>
+                    <div class="navigation-right-btn">
+                        <img src="../assets/images/account-img/round.svg" alt="">
+                        <a class="navigation-right-btn__a" href="#"><b>Romadhon@gmail.com</b></a>
+                    </div>
+                </div>
+                <button id="navbar-open">
+                    <img src="../assets/images/account-img/menu2.svg" alt="menu">
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- header -->
+
+    <!-- navbar responsive -->
+    <div id="navbar-responsive">
+        <button id="navbar-close">
+            <img src="../assets/images/close.svg" alt="close-img">
+        </button>
+        <div class="navigation-responsive-left">
+            <input class="navigation-responsive-left__input" placeholder="Search bar" type="text"></a>
+        </div>
+        <div class="navigation-responsive-right">
+            <div class="navigation-responsive-right-one">
+                <div class="navigation-responsive-right-one-link__one">
+                    <a class="navigation-responsive-right-one-link__one__a" href="#"><b>Become an Mentor</b></a>
+                    <a href="">
+                        <img src="../assets/images/home-img/arrow_drop_down.svg" alt="">
+                    </a>
+                </div>
+                <div class="navigation-responsive-right-one-link__second">
+                    <a class="navigation-responsive-right-one-link__second__a" href=""><b>Become an Mentor</b></a>
+                </div>
+            </div>
+            <div class="navigation-responsive-right-btn">
+                <button class="navigation-responsive-right-btn__btns"><b>Login</b></button>
+                <button class="navigation-responsive-right-btn__btns"><b>Sign Up</b></button>
+            </div>
+        </div>
+    </div>
+    <!-- navbar responsive -->
+    <!-- main -->
+    <main class="main">
+        <section class="hero">
+        </section>
+
+        <!-- name -->
+        <section class="name">
+            <div class="container">
+                <div class="name-section">
+                    <div class="name-img">
+                        <img src="../assets/images/account-img/Ellipse 22.png" alt="">
+                    </div>
+                    <div class="name-description">
+                        <p class="name-description__content">Romadhona Syarifuddin</p>
+                        <p class="name-description__content2">Full Stack Web Designer</p>
+                    </div>
+                </div>
+                <div class="name-link">
+                    <div class="name-link__content">
+                        <a class="name-link__content__a" href="">My Courses</a>
+                    </div>
+                    <div class="name-link__content">
+                        <a class="name-link__content__a" href="">Wishlist</a>
+                    </div>
+                    <div class="name-link__content">
+                        <a class="name-link__content__a" href="">My Certificate</a>
+                    </div>
+                </div>
+                <div class="courses-card">
+                    <div class="courses-card-grid">
+                        <div class="courses-card-grid__description">
+                            <div class="courses-card-grid__description__img"><img
+                                    src="../assets/images/home-img/img-gray.png" alt="">
+                            </div>
+                            <button class="courses-card-grid__description__btn"><b>UI/UX Design</b></button>
+                            <p class="courses-card-grid__description__p"><b>Interpersonal skills - work better</b>
+                            </p>
+                            <p class="courses-card-grid__description__p2">Tanah Air Team</p>
+                            <img src="../assets/images/home-img/star-2.png" alt=""><span
+                                class="courses-card-grid__description__p2__span"><b>(2078)</b></span>
+                            <div class="courses-card-grid__description__prise">
+                                <p class="courses-card-grid__description__prise-1"><del>$640</del></p>
+                                <p class="courses-card-grid__description__prise-2">$384</p>
+                            </div>
+                        </div>
+                        <div class="courses-card-grid__description">
+                            <div class="courses-card-grid__description__img"><img
+                                    src="../assets/images/home-img/img-gray.png" alt="">
+                            </div>
+                            <button class="courses-card-grid__description__btn"><b>UI/UX Design</b></button>
+                            <p class="courses-card-grid__description__p"><b>Interpersonal skills - work better with
+                                    others!</b>
+                            </p>
+                            <p class="courses-card-grid__description__p2">Tanah Air Team</p>
+                            <img src="../assets/images/home-img/star-2.png" alt=""><span
+                                class="courses-card-grid__description__p2__span"><b>(2078)</b></span>
+                            <div class="courses-card-grid__description__prise">
+                                <p class="courses-card-grid__description__prise-1"><del>$640</del></p>
+                                <p class="courses-card-grid__description__prise-2">$384</p>
+                            </div>
+                        </div>
+                        <div class="courses-card-grid__description">
+                            <div class="courses-card-grid__description__img"><img
+                                    src="../assets/images/home-img/img-gray.png" alt="">
+                            </div>
+                            <button class="courses-card-grid__description__btn"><b>UI/UX Design</b></button>
+                            <p class="courses-card-grid__description__p"><b>Interpersonal skills - work better with
+                                    others!</b>
+                            </p>
+                            <p class="courses-card-grid__description__p2">Tanah Air Team</p>
+                            <img src="../assets/images/home-img/star-2.png" alt=""><span
+                                class="courses-card-grid__description__p2__span"><b>(2078)</b></span>
+                            <div class="courses-card-grid__description__prise">
+                                <p class="courses-card-grid__description__prise-1"><del>$640</del></p>
+                                <p class="courses-card-grid__description__prise-2">$384</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="courses-card-grid">
+                        <div class="courses-card-grid__description">
+                            <div class="courses-card-grid__description__img"><img
+                                    src="../assets/images/home-img/img-gray.png" alt="">
+                            </div>
+                            <button class="courses-card-grid__description__btn"><b>UI/UX Design</b></button>
+                            <p class="courses-card-grid__description__p"><b>How to become an Expert Web</b>
+                            </p>
+                            <p class="courses-card-grid__description__p2">Tanah Air Team</p>
+                            <img src="../assets/images/home-img/star-2.png" alt=""><span
+                                class="courses-card-grid__description__p2__span"><b>(2078)</b></span>
+                            <div class="courses-card-grid__description__prise">
+                                <p class="courses-card-grid__description__prise-1"><del>$640</del></p>
+                                <p class="courses-card-grid__description__prise-2">$735</p>
+                            </div>
+                        </div>
+                        <div class="courses-card-grid__description">
+                            <div class="courses-card-grid__description__img"><img
+                                    src="../assets/images/home-img/img-gray.png" alt="">
+                            </div>
+                            <button class="courses-card-grid__description__btn"><b>UI/UX Design</b></button>
+                            <p class="courses-card-grid__description__p"><b>How to become an Expert Web Developer</b>
+                            </p>
+                            <p class="courses-card-grid__description__p2">Tanah Air Team</p>
+                            <img src="../assets/images/home-img/star-2.png" alt=""><span
+                                class="courses-card-grid__description__p2__span"><b>(2078)</b></span>
+                            <div class="courses-card-grid__description__prise">
+                                <p class="courses-card-grid__description__prise-1"><del>$640</del></p>
+                                <p class="courses-card-grid__description__prise-2">$758</p>
+                            </div>
+                        </div>
+                        <div class="courses-card-grid__description">
+                            <div class="courses-card-grid__description__img"><img
+                                    src="../assets/images/home-img/img-gray.png" alt="">
+                            </div>
+                            <button class="courses-card-grid__description__btn"><b>UI/UX Design</b></button>
+                            <p class="courses-card-grid__description__p"><b>How to become an Expert Web Developer</b>
+                            </p>
+                            <p class="courses-card-grid__description__p2">Tanah Air Team</p>
+                            <img src="../assets/images/home-img/star-2.png" alt=""><span
+                                class="courses-card-grid__description__p2__span"><b>(2078)</b></span>
+                            <div class="courses-card-grid__description__prise">
+                                <p class="courses-card-grid__description__prise-1"><del>$640</del></p>
+                                <p class="courses-card-grid__description__prise-2">$758</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="courses-card-grid">
+                        <div class="courses-card-grid__description">
+                            <div class="courses-card-grid__description__img"><img
+                                    src="../assets/images/home-img/img-gray.png" alt="">
+                            </div>
+                            <button class="courses-card-grid__description__btn"><b>UI/UX Design</b></button>
+                            <p class="courses-card-grid__description__p"><b>User Experience Design
+                                    Essentials</b></p>
+                            <p class="courses-card-grid__description__p2">Tanah Air Team</p>
+                            <img src="../assets/images/home-img/star-2.png" alt=""><span
+                                class="courses-card-grid__description__p2__span"><b>(2078)</b></span>
+                            <div class="courses-card-grid__description__prise">
+                                <p class="courses-card-grid__description__prise-1"><del>$640</del></p>
+                                <p class="courses-card-grid__description__prise-2"> $826</p>
+                            </div>
+                        </div>
+                        <div class="courses-card-grid__description">
+                            <div class="courses-card-grid__description__img"><img
+                                    src="../assets/images/home-img/img-gray.png" alt="">
+                            </div>
+                            <button class="courses-card-grid__description__btn"><b>3D Design</b></button>
+                            <p class="courses-card-grid__description__p"><b>Creating 3D Modelling in
+                                    Blendersdd</b></p>
+                            <p class="courses-card-grid__description__p2">Tanah Air Team</p>
+                            <img src="../assets/images/home-img/star-2.png" alt=""><span
+                                class="courses-card-grid__description__p2__span"><b>(2078)</b></span>
+                            <div class="courses-card-grid__description__prise">
+                                <p class="courses-card-grid__description__prise-1"><del>$640</del></p>
+                                <p class="courses-card-grid__description__prise-2">$973</p>
+                            </div>
+                        </div>
+                        <div class="courses-card-grid__description">
+                            <div class="courses-card-grid__description__img"><img
+                                    src="../assets/images/home-img/img-gray.png" alt="">
+                            </div>
+                            <button class="courses-card-grid__description__btn"><b>3D Design</b></button>
+                            <p class="courses-card-grid__description__p"><b>Creating 3D Modelling in
+                                    Blender</b></p>
+                            <p class="courses-card-grid__description__p2">Tanah Air Team</p>
+                            <img src="../assets/images/home-img/star-2.png" alt=""><span
+                                class="courses-card-grid__description__p2__span"><b>(2078)</b></span>
+                            <div class="courses-card-grid__description__prise">
+                                <p class="courses-card-grid__description__prise-1"><del>$640</del></p>
+                                <p class="courses-card-grid__description__prise-2">$973</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="courses-card-grid">
+                        <div class="courses-card-grid__description">
+                            <div class="courses-card-grid__description__img">
+                                <img src="../assets/images/home-img/img-gray.png" alt="">
+                            </div>
+                            <button class="courses-card-grid__description__btn"><b>3D Design</b></button>
+                            <p class="courses-card-grid__description__p"><b>Creating 3D Modelling in
+                                    Blender</b></p>
+                            <p class="courses-card-grid__description__p2">Tanah Air Team</p>
+                            <img src="../assets/images/home-img/star-2.png" alt=""><span
+                                class="courses-card-grid__description__p2__span"><b>(2078)</b></span>
+                            <div class="courses-card-grid__description__prise">
+                                <p class="courses-card-grid__description__prise-1"><del>$640</del></p>
+                                <p class="courses-card-grid__description__prise-2">$710</p>
+                            </div>
+                        </div>
+                        <div class="courses-card-grid__description">
+                            <div class="courses-card-grid__description__img">
+                                <img src="../assets/images/home-img/img-gray.png" alt="">
+                            </div>
+                            <button class="courses-card-grid__description__btn"><b>UI/UX Design</b></button>
+                            <p class="courses-card-grid__description__p"><b>Interpersonal skills - work better with
+                                    others!</b>
+                            </p>
+                            <p class="courses-card-grid__description__p2">Tanah Air Team</p>
+                            <img src="../assets/images/home-img/star-2.png" alt=""><span
+                                class="courses-card-grid__description__p2__span"><b>(2078)</b></span>
+                            <div class="courses-card-grid__description__prise">
+                                <p class="courses-card-grid__description__prise-1"><del>$640</del></p>
+                                <p class="courses-card-grid__description__prise-2">$273</p>
+                            </div>
+                        </div>
+                        <div class="courses-card-grid__description">
+                            <div class="courses-card-grid__description__img">
+                                <img src="../assets/images/home-img/img-gray.png" alt="">
+                            </div>
+                            <button class="courses-card-grid__description__btn"><b>UI/UX Design</b></button>
+                            <p class="courses-card-grid__description__p"><b>Interpersonal skills - work better with
+                                    others!</b>
+                            </p>
+                            <p class="courses-card-grid__description__p2">Tanah Air Team</p>
+                            <img src="../assets/images/home-img/star-2.png" alt=""><span
+                                class="courses-card-grid__description__p2__span"><b>(2078)</b></span>
+                            <div class="courses-card-grid__description__prise">
+                                <p class="courses-card-grid__description__prise-1"><del>$640</del></p>
+                                <p class="courses-card-grid__description__prise-2">$273</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- name -->
+    </main>
+    <!-- main -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-section">
+                <div class="footer-section__left">
+                    <img src="assets/images/home-img/Log-whiteo.svg" alt="">
+                    <p class="footer-section__left__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet
+                        tristique placerat eleifend aliquam pellentesque facilisis
+                        ultrices. Imperdiet mus urna egestas at tellus.</p>
+                </div>
+                <div class="footer-section__link">
+                    <div class="footer-section__link__a">
+                        <a class="footer-section__link__a__link" href="">About</a>
+                    </div>
+                    <div class="footer-section__link__a1">
+                        <a class="footer-section__link__a1__link" href=""><b>About us</b></a>
+                    </div>
+                    <div class="footer-section__link__a1">
+                        <a class="footer-section__link__a1__link" href=""><b>Courses</b></a>
+                    </div>
+                    <div class="footer-section__link__a1">
+                        <a class="footer-section__link__a1__link" href=""><b>Mentor</b></a>
+                    </div>
+                    <div class="footer-section__link__a1">
+                        <a class="footer-section__link__a1__link" href=""><b>Contact Us</b></a>
+                    </div>
+                </div>
+                <div class="footer-section__link">
+                    <div class="footer-section__link__a">
+                        <a class="footer-section__link__a__link" href="">Support</a>
+                    </div>
+                    <div class="footer-section__link__a1">
+                        <a class="footer-section__link__a1__link" href=""><b>Careers</b></a>
+                    </div>
+                    <div class="footer-section__link__a1">
+                        <a class="footer-section__link__a1__link" href=""><b>Help & Support</b></a>
+                    </div>
+                    <div class="footer-section__link__a1">
+                        <a class="footer-section__link__a1__link" href=""><b>Blog</b></a>
+                    </div>
+                </div>
+                <div class="footer-section__link">
+                    <div class="footer-section__link__a">
+                        <a class="footer-section__link__a__link" href="">Company</a>
+                    </div>
+                    <div class="footer-section__link__a1">
+                        <a class="footer-section__link__a1__link" href=""><b>Privacy Policy</b></a>
+                    </div>
+                    <div class="footer-section__link__a1">
+                        <a class="footer-section__link__a1__link" href=""><b>Terms of Service</b></a>
+                    </div>
+                    <div class="footer-section__link__a1">
+                        <a class="footer-section__link__a1__link" href=""><b>Code of Conduct</b></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom__a1">
+                    <div class="footer-bottom__a1__a">
+                        <a class="footer-bottom__a1__a__b" href="">Privacy Policy</a>
+                    </div>
+                    <div class="footer-bottom__a1__a">
+                        <a class="footer-bottom__a1__a__b" href="">Terms and Condition</a>
+                    </div>
+                </div>
+                <div class="footer-bottom__right">
+                    <a class="footer-bottom__a1__a__b" href="">@2020 TanahAir Studio. All rights reserved.</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer -->
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

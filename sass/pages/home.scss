@@ -50,6 +50,38 @@
           display: flex;
           align-items: center;
           gap: 24px;
+          position: relative;
+          &:hover .dropdown-menu {
+            display: block;
+            position: fixed;
+          }
+          .dropdown-menu {
+            position: absolute;
+            background-color: rgb(228, 124, 124);
+            top: 65px;
+            display: none;
+            width: 200px;
+            height: 250px;
+            &:hover {
+              display: block;
+            }
+            &-link {
+              padding: 10px;
+              display: block;
+              color: var(--Text-Tittle, #1c3554);
+              font-family: Montserrat;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 32px;
+              border-bottom: 1px solid white;
+              width: 90%;
+              &:hover {
+                color: white;
+                transition: 0.3s;
+              }
+            }
+          }
           &-link__second {
             &__a {
               color: var(--Text-Tittle, #1c3554);
@@ -894,3 +926,222 @@
 }
 
 // carousel
+
+// company
+
+.company {
+  margin-bottom: 160px;
+
+  .container {
+    .company-img2 {
+      display: flex;
+      justify-content: center;
+      gap: 56px;
+      flex-wrap: wrap;
+      img:hover {
+        box-shadow: 3px 3px 3px bisque;
+      }
+    }
+    .company-title {
+      margin-right: auto;
+      margin-left: auto;
+      color: var(--Text-Tittle, #1c3554);
+      font-variant-numeric: lining-nums proportional-nums;
+      font-family: Rubik;
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 63.984px;
+      margin-bottom: 56px;
+      max-width: 492px;
+    }
+    .company-img1 {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-bottom: 32px;
+
+      img:hover {
+        box-shadow: 3px 3px 3px bisque;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .company {
+    .container {
+      .company-img1 {
+        justify-content: center;
+      }
+    }
+  }
+}
+// company
+
+// blog
+.blog {
+  .container {
+    .blog-title {
+      color: var(--Text-Tittle, #1c3554);
+      font-variant-numeric: lining-nums proportional-nums;
+      font-family: Rubik;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 63.984px;
+    }
+    .blog-card {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 70px;
+      &__content {
+        padding: 16px 16px;
+        &:hover {
+          border-radius: 8px;
+          background: var(--Text-white, #fff);
+          box-shadow: 4px 4px 4px rgb(234, 227, 227);
+          transition: 0.3s;
+        }
+        &-flex {
+          display: flex;
+          gap: 8px;
+          &__description2 {
+            color: var(--Text-Tittle, #1c3554);
+            font-variant-numeric: lining-nums proportional-nums;
+            font-family: Rubik;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 32px;
+            max-width: 368px;
+          }
+          &__description3 {
+            color: var(--Text-Body, #808080);
+            font-family: Montserrat;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 27px;
+            max-width: 368px;
+          }
+          &__description4 {
+            color: var(--Primary-Pink, #f72585);
+            font-family: Montserrat;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.blog-card__contenr-flex__description {
+  color: var(--Text-Body, #808080);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+// blog
+
+// footer
+.footer {
+  padding-top: 150px;
+  .container {
+    padding: 80px 103px 40px 68px;
+    border-radius: 8px;
+    background: var(--Other-Navy, #021934);
+    .footer-section {
+      &__link {
+        margin-bottom: 80px;
+        &__a1 {
+          margin-bottom: 8px;
+          &__link {
+            color: var(--Text-white, #fff);
+            font-family: Montserrat;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px;
+            &:hover {
+              color: bisque;
+            }
+          }
+        }
+        &__a {
+          margin-bottom: 24px;
+          &__link {
+            color: var(--Text-white, #fff);
+            font-variant-numeric: lining-nums proportional-nums;
+            font-family: Rubik;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px;
+          }
+        }
+      }
+      display: flex;
+      gap: 132px;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      &__left {
+        &__p {
+          color: var(--Text-white, #fff);
+          max-width: 550px;
+          font-family: Montserrat;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 27px;
+          margin-bottom: 150px;
+        }
+      }
+    }
+  }
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  &__a1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    &__a {
+      margin-bottom: 30px;
+      &__b {
+        color: var(--Text-white, #fff);
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 27px;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .footer {
+    .container {
+      .footer-section {
+        .footer-section__left {
+          .footer-section__left__p {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+// footer

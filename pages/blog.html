@@ -6,15 +6,336 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <link rel="stylesheet" href="../assets/css/blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
-    <div class="container">
-        <p class="baa">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non magni dicta delectus facilis. Ea,
-            sint
-            doloribus optio beatae tempore odio eum? Voluptatibus soluta doloribus odit placeat dicta, delectus ratione
-            aspernatur!</p>
+
+    <div id="backtop">
+
+        <a href="#">
+            <img src="../assets/images/top.svg" alt="img">
+        </a>
     </div>
+    <!-- header -->
+    <header class="header">
+        <div class="container">
+            <div class="navigation">
+                <a href="#">
+                    <img src="../assets/images/home-img/Log-whiteo.svg" alt="">
+                </a>
+                <div class="navigation-left">
+                    <input class="navigation-left__input" placeholder="Search bar" type="text"></a>
+                </div>
+                <div class="navigation-right">
+                    <div class="navigation-right-one">
+                        <div class="navigation-right-one-link__one">
+                            <a class="navigation-right-one-link__one__a" href="#"><b>Category</b></a>
+                            <a href="">
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-menu-item"><a href="../pages/courses.html"
+                                            class="dropdown-menu-link">Courses</a>
+                                    </li>
+                                    <li class="dropdown-menu-item"><a href="../pages/details.html"
+                                            class="dropdown-menu-link">Detail
+                                            Courses</a></li>
+                                    <li class="dropdown-menu-item"><a href="../pages/blog.html"
+                                            class="dropdown-menu-link">Blog</a></li>
+                                    <li class="dropdown-menu-item"><a href="../pages/account.html"
+                                            class="dropdown-menu-link">Account</a>
+                                    </li>
+                                </ul>
+                                <img src="../assets/images/home-img/arrow_drop_down.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="navigation-right-one-link__second">
+                            <a class="navigation-right-one-link__second__a" href=""><b>Become an Mentor</b></a>
+                        </div>
+                    </div>
+                    <div class="navigation-right-btn">
+                        <button class="navigation-right-btn__btns"><b>Login</b></button>
+                        <button class="navigation-right-btn__btns"><b>Sign Up</b></button>
+                    </div>
+                </div>
+                <button id="navbar-open">
+                    <img src="../assets/images/account-img/menu2.svg" alt="menu">
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- header -->
+
+    <!-- navbar responsive -->
+    <div id="navbar-responsive">
+        <button id="navbar-close">
+            <img src="../assets/images/close.svg" alt="close-img">
+        </button>
+        <div class="navigation-responsive-left">
+            <input class="navigation-responsive-left__input" placeholder="Search bar" type="text"></a>
+        </div>
+        <div class="navigation-responsive-right">
+            <div class="navigation-responsive-right-one">
+                <div class="navigation-responsive-right-one-link__one">
+                    <a class="navigation-responsive-right-one-link__one__a" href="#"><b>Become an Mentor</b></a>
+                    <a href="">
+                        <img src="../assets/images/home-img/arrow_drop_down.svg" alt="">
+                    </a>
+                </div>
+                <div class="navigation-responsive-right-one-link__second">
+                    <a class="navigation-responsive-right-one-link__second__a" href=""><b>Become an Mentor</b></a>
+                </div>
+            </div>
+            <div class="navigation-responsive-right-btn">
+                <button class="navigation-responsive-right-btn__btns"><b>Login</b></button>
+                <button class="navigation-responsive-right-btn__btns"><b>Sign Up</b></button>
+            </div>
+        </div>
+    </div>
+    <!-- navbar responsive -->
+
+    <!-- hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-link">
+                <div class="hero-link-content">
+                    <div class="hero-link-content__a">
+                        <a class="hero-link-content__a__link" href="../index.html">Home</a>
+                    </div>
+                    <div class="hero-link-content__a">
+                        <img src="../assets/images/blog-img/Arrow Chevron Right.png" alt="">
+                    </div>
+                </div>
+                <div class="hero-link-content">
+                    <a class="hero-link-content__a" href="#">Blog</a>
+                </div>
+            </div>
+            <h1 class="hero-title">
+                <b>Latest Blog</b>
+            </h1>
+        </div>
+    </section>
+    <!-- hero -->
+
+    <!-- section carousel -->
+
+    <section class="carousel">
+        <div class="container">
+            <div class="carousel-card">
+                <div class="carousel-card-imgs">
+                    <div class="carousel-card-imgs__img">
+                        <img src="../assets/images/blog-img/bg-grey-blog.svg" alt="">
+                    </div>
+                    <div class="carousel-card-imgs__img">
+                        <img src="../assets/images/blog-img/bg-grey-blog.svg" alt="">
+                    </div>
+                    <div class="carousel-card-imgs__img">
+                        <img src="../assets/images/blog-img/bg-grey-blog.svg" alt="">
+                    </div>
+                    <div class="carousel-card-imgs__img">
+                        <img src="../assets/images/blog-img/bg-grey-blog.svg" alt="">
+                    </div>
+                </div>
+                <div class="carousel-card-content">
+                    <div class="carousel-card-content__description">
+                        <div class="title-3">
+                            <h3 class="carousel-card-content__description__title">How to experience powerful education
+                                free
+                                of charge
+                            </h3>
+                        </div>
+                        <div class="carousel-card-content__description__flex">
+                            <p class="carousel-card-content__description__flex__item"><b>3 May 2021</b></p>
+                            <img src="../assets/images/blog-img/blue-round.png" alt="">
+                            <p class="carousel-card-content__description__flex__item"><b>5 min read</b></p>
+
+                        </div>
+                        <p class="carousel-card-content__description__p">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Nulla urna dolor quis enim, convallis vitae maecenas. Orci,
+                            erat enim adipiscing mattis elit nunc, sed facilisis. Enim, dui, diam sit at. Urna, sit sit
+                            eget placerat eget hendrerit
+                            consequat. Risus, cursus nibh aliquet facilisis laoreet sagittis quis. Aliquam amet, vel
+                            aliquam cursus aliquet
+                            pellentesque aenean. Sit vestibulum malesuada eget pharetra. Risus consequat bibendum dictum
+                            placerat convallis donec
+                            malesuada in porttitor. Sag</p>
+                        <button class="carousel-card-content__description__btn"><b>Read More</b></button>
+                    </div>
+                    <div class="carousel-card-content__description">
+                        <div class="title-4">
+                            <h3 class="carousel-card-content__description__title">How to experience powerful education
+                                free
+                                of charge
+                            </h3>
+                        </div>
+                        <div class="carousel-card-content__description__flex">
+                            <p class="carousel-card-content__description__flex__item"><b>3 May 2021</b></p>
+                            <img src="../assets/images/blog-img/blue-round.png" alt="">
+                            <p class="carousel-card-content__description__flex__item"><b>5 min read</b></p>
+
+                        </div>
+                        <p class="carousel-card-content__description__p">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Nulla urna dolor quis enim, convallis vitae maecenas. Orci,
+                            erat enim adipiscing mattis elit nunc, sed facilisis. Enim, dui, diam sit at. Urna, sit sit
+                            eget placerat eget hendrerit
+                            consequat. Risus, cursus nibh aliquet facilisis laoreet sagittis quis. Aliquam amet, vel
+                            aliquam cursus aliquet
+                            pellentesque aenean. Sit vestibulum malesuada eget pharetra. Risus consequat bibendum dictum
+                            placerat convallis donec
+                            malesuada in porttitor. Sag</p>
+                        <button class="carousel-card-content__description__btn"><b>Read More</b></button>
+                    </div>
+                    <div class="carousel-card-content__description">
+                        <div class="title-2">
+                            <h3 class="carousel-card-content__description__title">How to experience powerful education
+                                free
+                                of charge
+                            </h3>
+                        </div>
+                        <div class="carousel-card-content__description__flex">
+                            <p class="carousel-card-content__description__flex__item"><b>3 May 2021</b></p>
+                            <img src="../assets/images/blog-img/blue-round.png" alt="">
+                            <p class="carousel-card-content__description__flex__item"><b>5 min read</b></p>
+
+                        </div>
+                        <p class="carousel-card-content__description__p">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Nulla urna dolor quis enim, convallis vitae maecenas. Orci,
+                            erat enim adipiscing mattis elit nunc, sed facilisis. Enim, dui, diam sit at. Urna, sit sit
+                            eget placerat eget hendrerit
+                            consequat. Risus, cursus nibh aliquet facilisis laoreet sagittis quis. Aliquam amet, vel
+                            aliquam cursus aliquet
+                            pellentesque aenean. Sit vestibulum malesuada eget pharetra. Risus consequat bibendum dictum
+                            placerat convallis donec
+                            malesuada in porttitor. Sag</p>
+                        <button class="carousel-card-content__description__btn"><b>Read More</b></button>
+                    </div>
+                    <div class="carousel-card-content__description">
+                        <div class="title">
+                            <h3 class="carousel-card-content__description__title">How to experience powerful education
+                                free
+                                of charge
+                            </h3>
+                        </div>
+                        <div class="carousel-card-content__description__flex">
+                            <p class="carousel-card-content__description__flex__item"><b>3 May 2021</b></p>
+                            <img src="../assets/images/blog-img/blue-round.png" alt="">
+                            <p class="carousel-card-content__description__flex__item"><b>5 min read</b></p>
+
+                        </div>
+                        <p class="carousel-card-content__description__p">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Nulla urna dolor quis enim, convallis vitae maecenas. Orci,
+                            erat enim adipiscing mattis elit nunc, sed facilisis. Enim, dui, diam sit at. Urna, sit sit
+                            eget placerat eget hendrerit
+                            consequat. Risus, cursus nibh aliquet facilisis laoreet sagittis quis. Aliquam amet, vel
+                            aliquam cursus aliquet
+                            pellentesque aenean. Sit vestibulum malesuada eget pharetra. Risus consequat bibendum dictum
+                            placerat convallis donec
+                            malesuada in porttitor. Sag </p>
+                        <button class="carousel-card-content__description__btn"><b>Read More</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-img">
+                <img src="../assets/images/blog-img/Pagination.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- section carousel -->
+
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-section">
+                <div class="footer-section__left">
+                    <img src="../assets/images/home-img/Log-whiteo.svg" alt="">
+                    <p class="footer-section__left__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet
+                        tristique placerat eleifend aliquam pellentesque facilisis
+                        ultrices. Imperdiet mus urna egestas at tellus.</p>
+                </div>
+                <div class="footer-section__link">
+                    <div class="footer-section__link__a">
+                        <a class="footer-section__link__a__link" href="">About</a>
+                    </div>
+                    <div class="footer-section__link__a1">
+                        <a class="footer-section__link__a1__link" href=""><b>About us</b></a>
+                    </div>
+                    <div class="footer-section__link__a1">
+                        <a class="footer-section__link__a1__link" href=""><b>Courses</b></a>
+                    </div>
+                    <div class="footer-section__link__a1">
+                        <a class="footer-section__link__a1__link" href=""><b>Mentor</b></a>
+                    </div>
+                    <div class="footer-section__link__a1">
+                        <a class="footer-section__link__a1__link" href=""><b>Contact Us</b></a>
+                    </div>
+                </div>
+                <div class="footer-section__link">
+                    <div class="footer-section__link__a">
+                        <a class="footer-section__link__a__link" href="">Support</a>
+                    </div>
+                    <div class="footer-section__link__a1">
+                        <a class="footer-section__link__a1__link" href=""><b>Careers</b></a>
+                    </div>
+                    <div class="footer-section__link__a1">
+                        <a class="footer-section__link__a1__link" href=""><b>Help & Support</b></a>
+                    </div>
+                    <div class="footer-section__link__a1">
+                        <a class="footer-section__link__a1__link" href=""><b>Blog</b></a>
+                    </div>
+                </div>
+                <div class="footer-section__link">
+                    <div class="footer-section__link__a">
+                        <a class="footer-section__link__a__link" href="">Company</a>
+                    </div>
+                    <div class="footer-section__link__a1">
+                        <a class="footer-section__link__a1__link" href=""><b>Privacy Policy</b></a>
+                    </div>
+                    <div class="footer-section__link__a1">
+                        <a class="footer-section__link__a1__link" href=""><b>Terms of Service</b></a>
+                    </div>
+                    <div class="footer-section__link__a1">
+                        <a class="footer-section__link__a1__link" href=""><b>Code of Conduct</b></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom__a1">
+                    <div class="footer-bottom__a1__a">
+                        <a class="footer-bottom__a1__a__b" href="">Privacy Policy</a>
+                    </div>
+                    <div class="footer-bottom__a1__a">
+                        <a class="footer-bottom__a1__a__b" href="">Terms and Condition</a>
+                    </div>
+                </div>
+                <div class="footer-bottom__right">
+                    <a class="footer-bottom__a1__a__b" href="">@2020 TanahAir Studio. All rights reserved.</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
