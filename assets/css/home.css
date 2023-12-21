@@ -1095,6 +1095,9 @@ button {
   .company .container .company-title {
     text-align: center;
   }
+  .blog .container .blog-card {
+    text-align: center;
+  }
   .blog .container .blog-title {
     text-align: center;
   }
