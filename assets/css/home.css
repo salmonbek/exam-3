@@ -766,7 +766,7 @@ button {
       flex-wrap: wrap;
 }
 .mentor .container .mentor-flex__left img {
-  max-width: 100%;
+  width: 100%;
 }
 .mentor .container .mentor-flex__right__btn {
   padding: 16px 40px;
@@ -941,6 +941,9 @@ button {
 }
 .blog .container .blog-card__content {
   padding: 16px 16px;
+}
+.blog .container .blog-card__content img {
+  width: 100%;
 }
 .blog .container .blog-card__content:hover {
   border-radius: 8px;
