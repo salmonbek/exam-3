@@ -1132,6 +1132,62 @@
 }
 
 @media (max-width: 500px) {
+  .company {
+    .container {
+      .company-title {
+        text-align: center;
+      }
+    }
+  }
+  .blog {
+    .container {
+      .blog-title {
+        text-align: center;
+      }
+    }
+  }
+  .mentor {
+    .container {
+      .mentor-flex {
+        .mentor-flex__right {
+          &__btn {
+            margin-left: 60px;
+          }
+        }
+      }
+    }
+  }
+  .courses {
+    .container {
+      .courses-btns {
+        margin-left: 60px;
+        margin-right: 50px;
+      }
+      .courses-card {
+        &-grid {
+          &__description {
+            .couses-card-grid__description__imgs {
+              margin-left: 50px;
+              margin-right: 50px;
+            }
+            &__p2 {
+              text-align: center;
+            }
+            &__p {
+              text-align: center;
+            }
+            &__prise {
+              margin-left: 60px;
+              margin-right: 60px;
+            }
+          }
+        }
+      }
+      .courses-link {
+        margin-left: 50px;
+      }
+    }
+  }
   .footer {
     .container {
       .footer-section {
