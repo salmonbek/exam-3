@@ -679,6 +679,38 @@
 // module
 .module {
   .container {
+    .module-btn {
+      padding: 12px 32px;
+      background-color: #f72585;
+      color: var(--Other-white, #fff);
+      width: 58%;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 32px; /* 200% */
+    }
+    .module-flex {
+      max-width: 746px;
+      min-height: 428px;
+      padding: 24px 24px 24px 40px;
+      background: var(--primary-20-pink, #fff5f9);
+      .module-flex__c {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__p {
+          color: var(--Text-Tittle, #1c3554);
+
+          /* Paragraph/Semibold/Body - 16px */
+          font-family: Montserrat;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 32px;
+        }
+      }
+    }
     .module-c__card {
       padding: 40px 40px;
       max-width: 728px;
@@ -686,9 +718,31 @@
       border: 1px solid var(--Text-Disable, #e6e6e6);
       background: var(--Other-white, #fff);
       &__p {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
         &__flex {
           display: flex;
           align-items: center;
+          gap: 12px;
+
+          &__p {
+            color: var(--Text-Tittle, #1c3554);
+            text-align: right;
+
+            /* Paragraph/Semibold/Body - 16px */
+            font-family: Montserrat;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 32px; /* 200% */
+            &__right {
+              &__p {
+                color: red;
+              }
+            }
+          }
           img {
             width: 24px;
             height: 24px;
@@ -735,13 +789,33 @@
       &-p {
         color: var(--Text-Tittle, #1c3554);
         text-align: right;
-
-        /* Paragraph/Bold/Body - 16px */
         font-family: Montserrat;
         font-size: 16px;
         font-style: normal;
         font-weight: 700;
-        line-height: 32px; /* 200% */
+        line-height: 32px;
+      }
+    }
+  }
+}
+
+.module-c__card__p__right__p {
+  color: var(--Text-Body, #808080);
+  text-align: right;
+
+  /* Paragraph/Semibold/Body - 16px */
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+@media (max-width: 500px) {
+  .module {
+    .container {
+      .module-btn {
+        width: 100%;
       }
     }
   }
