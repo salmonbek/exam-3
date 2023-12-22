@@ -411,16 +411,17 @@
   }
 }
 
-.search input {
-  flex-grow: 1;
-  border-right: none;
-}
+// .search input {
+//   border-right: none;
+//   max-width: 100%;
+// }
 
-.search button {
-  padding: 12px 32px;
-  border-radius: 8px;
-  background: var(--Primary-Pink, #f72585);
-}
+// .search button {
+//   flex-grow: 1;
+//   padding: 12px 32px;
+//   border-radius: 8px;
+//   background: var(--Primary-Pink, #f72585);
+// }
 
 @media (max-width: 1200px) {
   .main {
@@ -1226,3 +1227,70 @@
   }
 }
 // footer
+
+// form {
+//   margin-top: 66px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   justify-content: space-around;
+//   max-width: 610px;
+//   height: 80px;
+//   border-radius: 8px;
+//   background: var(--Text-white, #fff);
+//   button {
+//     background: transparent;
+//     border: none;
+//   }
+//   input {
+//     outline: none;
+//     border: none;
+//     font-size: 24px;
+//   }
+//   .search2 {
+//     border-radius: 8px;
+//     border: 1px solid var(--Text-Tittle, #1c3554);
+//     background: transparent;
+//     padding: 12px 32px;
+//     font-family: Montserrat;
+//     font-size: 16px;
+//     font-style: normal;
+//     font-weight: 400;
+//     line-height: 32px;
+//   }
+//   .search2:hover {
+//     cursor: pointer;
+//     transition: 0.5s;
+//     border: none;
+//     color: white;
+//     border-radius: 8px;
+//     background: var(--Primary-Pink, #f72585);
+//   }
+// }
+
+// .form {
+//   margin-top: 66px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   justify-content: space-around;
+//   max-width: 610px;
+//   height: 80px;
+//   border-radius: 8px;
+//   background: var(--Text-white, #fff);
+//   button {
+//     background: transparent;
+//     border: none;
+//   }
+//   .search2 {
+//     border-radius: 8px;
+//     border: 1px solid var(--Text-Tittle, #1c3554);
+//     background: transparent;
+//     padding: 12px 32px;
+//     font-family: Montserrat;
+//     font-size: 16px;
+//     font-style: normal;
+//     font-weight: 400;
+//     line-height: 32px;
+//   }
+// }

@@ -438,19 +438,6 @@ button {
   max-width: 647px;
 }
 
-.search input {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  border-right: none;
-}
-
-.search button {
-  padding: 12px 32px;
-  border-radius: 8px;
-  background: var(--Primary-Pink, #f72585);
-}
-
 @media (max-width: 1200px) {
   .main .courses .container .courses-card {
     grid-template-columns: repeat(3, 1fr);

@@ -28,8 +28,9 @@ button {
   width: 100%;
   top: 0px;
   left: 0;
-  background: var(--other-overlay-50, #000000);
+  background-color: rgb(134, 98, 58);
   padding: 36px 0;
+  z-index: 100;
 }
 .header .container .navigation {
   display: -webkit-box;
