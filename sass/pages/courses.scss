@@ -2,3 +2,278 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+// header
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  left: 0;
+  backdrop-filter: blur(30px);
+  padding: 36px 0;
+  z-index: 100;
+  .container {
+    .navigation {
+      display: flex;
+      justify-content: space-between;
+      #navbar-open {
+        display: none;
+      }
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      .navigation-right {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        &-btn {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          &__btns {
+            border-radius: 8px;
+            padding: 12px 32px;
+            border: 1px solid var(--Text-Tittle, #1c3554);
+            color: var(--Text-Tittle, #1c3554);
+            font-family: Montserrat;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 32px;
+            &:hover {
+              background-color: #f72585;
+              color: #fff;
+              border: none;
+            }
+          }
+        }
+        &-one {
+          display: flex;
+          align-items: center;
+          gap: 24px;
+          position: relative;
+          &:hover .dropdown-menu {
+            display: block;
+            position: fixed;
+          }
+          .dropdown-menu {
+            position: absolute;
+            background-color: rgb(228, 124, 124);
+            top: 65px;
+            display: none;
+            width: 200px;
+            height: 250px;
+            &:hover {
+              display: block;
+            }
+            &-link {
+              padding: 10px;
+              display: block;
+              color: var(--Text-Tittle, #1c3554);
+              font-family: Montserrat;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 32px;
+              border-bottom: 1px solid white;
+              width: 90%;
+              &:hover {
+                color: white;
+                transition: 0.3s;
+              }
+            }
+          }
+          &-link__second {
+            &__a {
+              color: var(--Text-Tittle, #1c3554);
+              font-family: Montserrat;
+              font-weight: 400;
+              line-height: 32px;
+              &:hover {
+                color: rgb(22, 23, 26);
+                transition: 0.5s;
+              }
+            }
+          }
+          &-link__one {
+            display: flex;
+            align-items: center;
+            &__a {
+              color: var(--Text-Tittle, #1c3554);
+              font-family: Montserrat;
+              font-size: 16px;
+              font-weight: 700;
+              line-height: 32px;
+              &:hover {
+                color: rgb(22, 23, 26);
+                transition: 0.5s;
+              }
+            }
+          }
+        }
+      }
+      .navigation-left {
+        display: flex;
+        gap: 24px;
+        &__input {
+          padding: 12px;
+          width: 443px;
+          outline: none;
+          border-radius: 8px;
+          border: 1px solid var(--Text-In-Field, #ccc);
+          background: url("../../assets/images/home-img/Search.svg") no-repeat;
+          background-position: right;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1250px) {
+  .header {
+    .container {
+      .navigation {
+        #navbar-open {
+          display: inline-block;
+        }
+        .navigation-left {
+          display: none;
+        }
+        .navigation-right {
+          display: none;
+        }
+      }
+    }
+  }
+}
+// header
+
+// backtop
+#backtop {
+  transition: 1s;
+  position: fixed;
+  background-color: red;
+  bottom: -50px;
+  right: 50px;
+  border-radius: 5px;
+  a {
+    padding: 10px;
+    display: block;
+  }
+}
+
+#backtop.backtop-show {
+  bottom: 50px;
+  z-index: 100;
+}
+// backtop
+
+// navbar-responsive
+#navbar-responsive {
+  z-index: 900;
+  transition: 0.6s;
+  #navbar-close {
+    img {
+      width: 40px;
+    }
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    padding: 8px;
+    border-radius: 4px;
+    &:hover {
+      background-color: wheat;
+    }
+  }
+  .navigation-responsive-right {
+    &-btn {
+      display: flex;
+      margin-top: 40px;
+      gap: 12px;
+      &__btns {
+        border-radius: 8px;
+        padding: 12px 32px;
+        border: 1px solid var(--Text-Tittle, #1c3554);
+        color: var(--Text-Tittle, #1c3554);
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 32px;
+        &:hover {
+          background-color: #f72585;
+          color: #fff;
+          border: none;
+        }
+      }
+    }
+    &-one {
+      &-link__second {
+        color: var(--Text-Tittle, #1c3554);
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        display: flex;
+        justify-content: center;
+        line-height: 32px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        background-color: #4e8fdb;
+        a {
+          color: white;
+        }
+        &:hover {
+          transition: 0.4s;
+        }
+      }
+      &-link__one {
+        display: flex;
+        align-items: center;
+        color: var(--Text-Tittle, #1c3554);
+        font-family: Montserrat;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        font-weight: 400;
+        line-height: 32px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        background-color: #4e8fdb;
+        margin-bottom: 50px;
+        a {
+          color: white;
+        }
+        &:hover {
+          transition: 0.4s;
+        }
+      }
+    }
+  }
+  .navigation-responsive-left {
+    &__input {
+      padding: 12px;
+      max-width: 100%;
+      width: 260px;
+      outline: none;
+      backdrop-filter: blur(15px);
+      border-radius: 8px;
+      border: 1px solid var(--Text-In-Field, #ccc);
+      background: url("../../assets/images/home-img/Search.svg") no-repeat;
+      background-position: right;
+      margin-bottom: 100px;
+    }
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  bottom: 0;
+  width: 100%;
+  background: url(../../assets/images/bg-2-nav.avif) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+// navbar-responsive

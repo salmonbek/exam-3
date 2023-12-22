@@ -9,7 +9,7 @@
   width: 100%;
   top: 0px;
   left: 0;
-  background-color: rgb(134, 98, 58);
+  background-color: grey;
   padding: 36px 0;
   z-index: 100;
 
@@ -986,16 +986,128 @@
 
 // feedback
 
-// re
+// reviews
+.re {
+  margin-top: 101px;
+  .container {
+    .re-btns {
+      &-btn {
+        width: 57%;
+        padding: 12px 32px;
+        text-align: center;
+        border-radius: 8px;
+        color: var(--Other-white, #fff);
+
+        /* Paragraph/Semibold/Body - 16px */
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 32px; /* 200% */
+        background-color: #f72585;
+        &:hover {
+          background-color: white;
+          color: #f72585;
+          border: 1px solid #f72585;
+        }
+      }
+    }
+    .re-card {
+      &-p {
+        color: var(--Text-Body, #808080);
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px;
+        max-width: 809px;
+      }
+      .re-card-left {
+        display: flex;
+        align-items: center;
+        gap: 426px;
+        flex-wrap: wrap;
+        &-gridd {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
+        &-g {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          &-p {
+            &-s {
+              color: var(--Text-Tittle, #1c3554);
+              font-family: Rubik;
+              font-size: 24px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 32px;
+            }
+            &-2 {
+              color: var(--Text-Body, #808080);
+              font-family: Montserrat;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: 32px;
+            }
+          }
+        }
+      }
+    }
+    .re-title {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 481px;
+      &-h {
+        color: var(--Text-Tittle, #1c3554);
+        font-variant-numeric: lining-nums proportional-nums;
+
+        /* Heading/Bold/H4 - 32px */
+        font-family: Rubik;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 48px; /* 150% */
+        text-transform: capitalize;
+      }
+      &-btn {
+        color: var(--Text-Tittle, #1c3554);
+
+        /* Heading/Medium/H5 - 24px */
+        font-family: Rubik;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 32px; /* 133.333% */
+      }
+    }
+  }
+}
+// reviews
 
 // name
 .name {
   margin-top: 48px;
   .container {
+    .name-title {
+      color: var(--Text-Tittle, #1c3554);
+      font-variant-numeric: lining-nums proportional-nums;
+
+      /* Heading/Bold/H4 - 32px */
+      font-family: Rubik;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 48px; /* 150% */
+      text-transform: capitalize;
+    }
     .courses-card {
       margin-top: 53px;
       display: flex;
-      gap: 16px;
+      gap: 169px;
       justify-content: center;
       flex-wrap: wrap;
       &-grid {

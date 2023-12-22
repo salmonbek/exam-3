@@ -6,10 +6,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>courses</title>
     <link rel="stylesheet" href="../assets/css/courses.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
+    <div id="backtop">
 
+        <a href="#">
+            <img src="assets/images/top.svg" alt="">
+        </a>
+    </div>
+    <!-- header -->
+    <header class="header">
+        <div class="container">
+            <div class="navigation">
+                <a href="">
+                    <img src="../assets/images/home-img/Logo.png" alt="">
+                </a>
+                <div class="navigation-left">
+                    <input class="navigation-left__input" placeholder="Search bar" type="text"></a>
+                </div>
+                <div class="navigation-right">
+                    <div class="navigation-right-one">
+                        <div class="navigation-right-one-link__one">
+                            <a class="navigation-right-one-link__one__a" href="#"><b>Category</b></a>
+                            <a href="">
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-menu-item"><a href="pages/courses.html"
+                                            class="dropdown-menu-link">Courses</a>
+                                    </li>
+                                    <li class="dropdown-menu-item"><a href="pages/details.html"
+                                            class="dropdown-menu-link">Detail
+                                            Courses</a></li>
+                                    <li class="dropdown-menu-item"><a href="pages/blog.html"
+                                            class="dropdown-menu-link">Blog</a></li>
+                                    <li class="dropdown-menu-item"><a href="pages/account.html"
+                                            class="dropdown-menu-link">Account</a>
+                                    </li>
+                                </ul>
+                                <img src="../assets/images/home-img/arrow_drop_down.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="navigation-right-one-link__second">
+                            <a class="navigation-right-one-link__second__a" href=""><b>Become an Mentor</b></a>
+                        </div>
+                    </div>
+                    <div class="navigation-right-btn">
+                        <a href="../pages/account.html"><button
+                                class="navigation-right-btn__btns"><b>Login</b></button></a>
+                        <a href="../pages/account.html"><button class="navigation-right-btn__btns"><b>Sign
+                                    Up</b></button></a>
+                    </div>
+                </div>
+                <button id="navbar-open">
+                    <img src="../assets/images/menu.svg" alt="menu">
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- header -->
+
+    <!-- navbar responsive -->
+    <div id="navbar-responsive">
+        <button id="navbar-close">
+            <img src="../assets/images/close.svg" alt="close-img">
+        </button>
+        <div class="navigation-responsive-left">
+            <input class="navigation-responsive-left__input" placeholder="Search bar" type="text"></a>
+        </div>
+        <div class="navigation-responsive-right">
+            <div class="navigation-responsive-right-one">
+                <div class="navigation-responsive-right-one-link__one">
+                    <a class="navigation-responsive-right-one-link__one__a" href="#"><b>Become an Mentor</b></a>
+                    <a href="">
+                        <img src="../assets/images/home-img/arrow_drop_down.svg" alt="">
+                    </a>
+                </div>
+                <div class="navigation-responsive-right-one-link__second">
+                    <a class="navigation-responsive-right-one-link__second__a" href=""><b>Become an Mentor</b></a>
+                </div>
+            </div>
+            <div class="navigation-responsive-right-btn">
+                <a href="../pages/account.html"><button
+                        class="navigation-responsive-right-btn__btns"><b>Login</b></button></a>
+                <a href="../pages/account.html"><button class="navigation-responsive-right-btn__btns"><b>Sign
+                            Up</b></button></a>
+            </div>
+        </div>
+    </div>
+    <!-- navbar responsive -->
+
+
+
+    <script src="../js/main.js"></script>
 </body>
 
 </html>
