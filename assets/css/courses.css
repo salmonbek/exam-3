@@ -327,3 +327,339 @@ button {
   background-position: right;
   margin-bottom: 100px;
 }
+
+.hero {
+  margin-top: 200px;
+}
+.hero .container .hero-title {
+  color: var(--Text-Tittle, #1c3554);
+  /* Heading/Bold/H2 - 64px */
+  font-family: Rubik;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 88px; /* 137.5% */
+  max-width: 738px;
+}
+.hero .container .hero-p {
+  color: var(--Text-Body, #808080);
+  /* Paragraph/Reguler/Body - 16px */
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px; /* 168.75% */
+  max-width: 712px;
+}
+.hero .container .f {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+}
+.hero .container .hero-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  text-align: center;
+}
+.hero .container .hero-link img {
+  width: 24px;
+  height: 24px;
+}
+.hero .container .hero-link a {
+  color: var(--Text-Body, #808080);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.name {
+  margin-top: 48px;
+}
+.name .container .name-title {
+  color: var(--Text-Tittle, #1c3554);
+  font-variant-numeric: lining-nums proportional-nums;
+  /* Heading/Bold/H4 - 32px */
+  font-family: Rubik;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 150% */
+  text-transform: capitalize;
+}
+.name .container .courses-card {
+  margin-top: 53px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 169px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.name .container .courses-card-grid {
+  padding: 16px 16px;
+  margin-bottom: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 12px;
+}
+.name .container .courses-card-grid__description {
+  margin-bottom: 24px;
+  padding: 16px 16px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.name .container .courses-card-grid__description:hover {
+  border-radius: 8px;
+  background: var(--Other-white, #fff);
+  -webkit-box-shadow: 4px 4px 4px rgb(234, 227, 227);
+          box-shadow: 4px 4px 4px rgb(234, 227, 227);
+}
+.name .container .courses-card-grid__description__prise {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.name .container .courses-card-grid__description__prise-1 {
+  color: var(--Text-In-Field, #ccc);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+}
+.name .container .courses-card-grid__description__prise-2 {
+  color: var(--Text-Tittle, #1c3554);
+  font-family: Rubik;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 133.333% */
+}
+.name .container .courses-card-grid__description__p {
+  color: var(--Text-Tittle, #1c3554);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  text-transform: capitalize;
+  max-width: 262.891px;
+}
+.name .container .courses-card-grid__description__p2 {
+  color: var(--Primary-Pink, #f72585);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  max-width: 262.891px;
+}
+.name .container .courses-card-grid__description__p2__span {
+  color: var(--Text-Body, #808080);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.name .container .courses-card-grid__description__btn {
+  padding: 8px 24px;
+  border-radius: 8px;
+  background: var(--Other-Blue, #4586d6);
+  position: relative;
+  top: -30px;
+  color: var(--Text-white, #fff);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-left: 68px;
+  z-index: 10;
+}
+.name .container .name-link {
+  margin-top: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 240px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.name .container .name-link__content__a {
+  color: var(--Text-Body, #808080);
+  font-family: Rubik;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 48px;
+}
+.name .container .name-link__content__a:hover {
+  color: #1c3554;
+  font-weight: 600;
+}
+.name .container .name-link__content__a::after {
+  content: "";
+  width: 0;
+  height: 5px;
+  border-radius: 22px;
+  background-color: #f72585;
+  margin: auto;
+  display: block;
+}
+.name .container .name-link__content__a:hover::after {
+  width: 100%;
+  -webkit-transition: width 0.3s linear;
+  transition: width 0.3s linear;
+}
+.name .container .name-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.name .container .name-section .name-description__content {
+  color: var(--Text-Tittle, #1c3554);
+  font-variant-numeric: lining-nums proportional-nums;
+  /* Heading/Bold/H4 - 32px */
+  font-family: Rubik;
+  font-size: 32px;
+  max-width: 385px;
+  font-weight: 700;
+  line-height: 48px; /* 150% */
+  text-transform: capitalize;
+}
+.name .container .name-section .name-description__content2 {
+  color: var(--Text-Body, #808080);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Rubik;
+  font-size: 16px;
+  max-width: 184px;
+  margin-top: -20px;
+  font-weight: 500;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.footer {
+  padding-top: 150px;
+}
+.footer .container {
+  padding: 80px 103px 40px 68px;
+  border-radius: 8px;
+  background: var(--Other-Navy, #021934);
+}
+.footer .container .footer-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 132px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.footer .container .footer-section__link {
+  margin-bottom: 80px;
+}
+.footer .container .footer-section__link__a1 {
+  margin-bottom: 8px;
+}
+.footer .container .footer-section__link__a1__link {
+  color: var(--Text-white, #fff);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+.footer .container .footer-section__link__a1__link:hover {
+  color: bisque;
+}
+.footer .container .footer-section__link__a {
+  margin-bottom: 24px;
+}
+.footer .container .footer-section__link__a__link {
+  color: var(--Text-white, #fff);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Rubik;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+.footer .container .footer-section__left__p {
+  color: var(--Text-white, #fff);
+  max-width: 550px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  margin-bottom: 150px;
+}
+
+.footer-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.footer-bottom__a1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 40px;
+}
+.footer-bottom__a1__a {
+  margin-bottom: 30px;
+}
+.footer-bottom__a1__a__b {
+  color: var(--Text-white, #fff);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  margin-bottom: 40px;
+}
