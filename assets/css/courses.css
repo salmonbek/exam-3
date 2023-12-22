@@ -332,14 +332,12 @@ button {
   margin-top: 200px;
 }
 .hero .container .hero-title {
+  max-width: 783px;
   color: var(--Text-Tittle, #1c3554);
-  /* Heading/Bold/H2 - 64px */
   font-family: Rubik;
   font-size: 64px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 88px; /* 137.5% */
-  max-width: 738px;
+  font-weight: 600;
+  line-height: 88px;
 }
 .hero .container .hero-p {
   color: var(--Text-Body, #808080);
@@ -381,7 +379,7 @@ button {
 }
 
 .name {
-  margin-top: 48px;
+  margin-top: 120px;
 }
 .name .container .name-title {
   color: var(--Text-Tittle, #1c3554);
@@ -400,6 +398,9 @@ button {
   display: -ms-flexbox;
   display: flex;
   gap: 169px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -545,7 +546,6 @@ button {
 .name .container .name-section .name-description__content {
   color: var(--Text-Tittle, #1c3554);
   font-variant-numeric: lining-nums proportional-nums;
-  /* Heading/Bold/H4 - 32px */
   font-family: Rubik;
   font-size: 32px;
   max-width: 385px;
@@ -565,6 +565,68 @@ button {
   text-transform: capitalize;
 }
 
+.categories .container .categories-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.categories .container .categories-card__grid__cards {
+  padding: 278px 78px 40px 73px;
+  border-radius: 8px;
+  opacity: 0.3;
+  background: var(--other-overlay-50, #000);
+  margin-bottom: 20px;
+}
+.categories .container .categories-card__grid__cards:hover {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.categories .container .categories-card__grid__cards__h {
+  color: var(--Text-white, #ffffff);
+  font-family: Rubik;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+}
+.categories .container .categories-title {
+  color: var(--Text-Tittle, #1c3554);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Rubik;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 63.984px;
+}
+
+@media (max-width: 1260px) {
+  .categories .container .categories-title {
+    text-align: center;
+  }
+  .categories .container .categories-card {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 1000px) {
+  .categories .container .categories-title {
+    text-align: center;
+  }
+  .categories .container .categories-card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .categories .container .categories-card .categories-card__grid__cards {
+    text-align: center;
+  }
+}
+@media (max-width: 664px) {
+  .categories .container .categories-title {
+    text-align: center;
+  }
+  .categories .container .categories-card {
+    grid-template-columns: 1fr;
+  }
+}
 .footer {
   padding-top: 150px;
 }
